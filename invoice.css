@@ -1,0 +1,84 @@
+/* Invoice-specific styling */
+.invoice-header {
+    border-bottom: 2px solid #730000;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+}
+
+.invoice-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.invoice-table th {
+    background-color: #730000;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+.invoice-table td {
+    padding: 8px 10px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.total-row {
+    font-weight: bold;
+    background-color: #f8f9fa;
+}
+
+@media print {
+    body {
+        font-size: 12pt;
+        background: none;
+        color: #000;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .no-print {
+        display: none !important;
+    }
+
+    .table {
+        page-break-inside: avoid;
+    }
+}
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+
+    .card,
+    .card * {
+        visibility: visible;
+    }
+
+    .card {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border: none;
+        box-shadow: none;
+    }
+
+    .no-print {
+        display: none !important;
+    }
+
+    .table {
+        page-break-inside: avoid;
+    }
+}
+
+.table thead th {
+    background-color: #f8f9fa;
+}

@@ -1,0 +1,117 @@
+/* General Styles */
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #f4f6f9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Navbar Styles */
+.navbar {
+    margin-bottom: 0;
+    border: none;
+}
+
+.navbar-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: inline-block;
+}
+
+.navbar-static-top {
+    height: 65px;
+}
+
+.navbar {
+    height: 80px;
+}
+
+/* Card Styles */
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.card-header {
+    border-radius: 10px 10px 0 0 !important;
+}
+
+/* Form Styles */
+.form-control {
+    border-radius: 5px;
+}
+
+.btn {
+    border-radius: 5px;
+}
+
+/* Alert Styles */
+.alert {
+    border-radius: 5px;
+}
+
+/* Dashboard Specific Styles */
+.info-box {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-box-icon {
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+}
+
+/* Profile Image Styles */
+.profile-user-img {
+    border: 3px solid #ddd;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Table Styles */
+.table-responsive {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table {
+    margin-bottom: 0;
+}
+
+.table th,
+.table td {
+    vertical-align: middle;
+}
+
+/* Modal Styles */
+.modal-content {
+    border-radius: 10px;
+}
+
+/* Footer Styles */
+.main-footer {
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        height: auto;
+    }
+
+    .navbar-static-top {
+        height: auto;
+    }
+}
